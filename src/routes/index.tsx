@@ -85,7 +85,7 @@ function FoodWise() {
   const [items, setItems] = useState<FoodItem[]>(SAMPLE_ITEMS);
   const [name, setName] = useState("");
   const [quantity, setQuantity] = useState("");
-  const [category, setCategory] = useState(CATEGORIES[0]);
+  const [category, setCategory] = useState<string>(CATEGORIES[0] ?? "Vegetables");
   const [storage, setStorage] = useState<Storage>("fridge");
   const [daysAgo, setDaysAgo] = useState("0");
 
